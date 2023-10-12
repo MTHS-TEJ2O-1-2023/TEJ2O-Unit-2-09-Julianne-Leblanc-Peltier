@@ -9,7 +9,6 @@ let randomNumber: number = 0
 let score: number
 score = 0
 
-randomNumber = -1
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
