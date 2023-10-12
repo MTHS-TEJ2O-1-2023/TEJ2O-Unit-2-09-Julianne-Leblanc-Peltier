@@ -38,10 +38,10 @@ input.onGesture(Gesture.Shake, function () {
 # # # # #
 `)
   }
-    // if randomNumber was 2
+  // if randomNumber was 2
   if (randomNumber === 2) {
     basic.showIcon(IconNames.Scissors)
-    }
+  }
 
   // pause and show you are ready again
   basic.pause(1000)
