@@ -18,32 +18,34 @@ input.onGesture(Gesture.Shake, function () {
   basic.clearScreen()
 
   // if randomNumber was 0
-  if (randomNumber == 0) {
+  if (randomNumber === 0) {
     basic.showLeds(`
 . . . . .
 . # # # .
 . # # # .
 . # # # .
 . . . . .
-`)}
+`)
+  }
 
-    // if randomNumber was 1
-    if (randomNumber == 1) {
-      basic.showLeds(`
+  // if randomNumber was 1
+  if (randomNumber === 1) {
+    basic.showLeds(`
 # # # # #
 # . . . #
 # . . . #
 # . . . #
 # # # # #
-`)}
+`)
+  }
     // if randomNumber was 2
-    if (randomNumber == 2){
-      basic.showIcon(IconNames.Scissors)
+  if (randomNumber === 2) {
+    basic.showIcon(IconNames.Scissors)
     }
 
-    // pause and show you are ready again
-    basic.pause(1000)
-    basic.showIcon(IconNames.Happy)
+  // pause and show you are ready again
+  basic.pause(1000)
+  basic.showIcon(IconNames.Happy)
 })
 
 // Button A
@@ -52,14 +54,12 @@ input.onButtonPressed(Button.A, function () {
   basic.showIcon(IconNames.Yes)
   basic.pause(1000)
   basic.showIcon(IconNames.Happy)
-
 })
-
 
 // Button B
 input.onButtonPressed(Button.B, function () {
   basic.clearScreen()
-  basic.showString("Score: ")
+  basic.showString('Score: ')
   basic.showString(score.toString())
   basic.pause(1000)
   basic.showIcon(IconNames.Happy)
